@@ -1,3 +1,5 @@
+# screen-recorder-chrome-extension
+This is an HNGX Internship task
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
