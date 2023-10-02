@@ -8,32 +8,48 @@ function Home() {
                 <div className="hero-text">
                     <h1>Show Them Don’t Just Tell</h1>
                     <p>Help your friends and loved ones by creating and sending videos on how to get things done on a website.</p>
-                    <button className="btn btn-solid btn-icon">Install HelpMeOut<ArrowRight size="20" /></button>
+                    <button className="install-btn btn btn-solid btn-icon">Install HelpMeOut<ArrowRight size="20" /></button>
                 </div>
-                <div className="hero-image"></div>
+                <div className="hero-image">
+                    <div className='double-image'>
+                        <img src='images/home-hero1.png' alt='hero 1' />
+                        <img src='images/home-hero2.png' alt='hero 2' />
+                    </div>
+                    <div>
+                        <img src='images/home-hero3.png' alt='hero 3' />
+                    </div>
+                </div>
             </section>
             <section className="Home-features">
-                <div className="features-image"></div>
-                <div className="features-grid">
-                    <div className="feature-inner">
-                        <div className="feature-icon"><RecordCircle size="32" variant="Bold" /></div>
-                        <div className="feature-text">
-                            <h3 className="feature-caption">Simple Screen Recording</h3>
-                            <p className="feature-description">Effortless screen recording for everyone. Record with ease, no tech expertise required.</p>
-                        </div>
+                <div className="feature-caption-wrapper">
+                    <h2>Features</h2>
+                    <p>Key Highlights of Our Extension</p>
+                </div>
+                <div className="features-wrapper grid-wrapper">
+                    <div className="features-image">
+                        <img src="images/feature-img.png" alt="feature" />
                     </div>
-                    <div className="feature-inner">
-                        <div className="feature-icon"><Send2 size="32" variant="Bold" /></div>
-                        <div className="feature-text">
-                            <h3 className="feature-caption">Easy-to-Share URL</h3>
-                            <p className="feature-description">Share your recordings instantly with a single link. No attachments, no downloads.</p>
+                    <div className="features-grid grid-wrapper">
+                        <div className="feature-inner">
+                            <div className="feature-icon flex"><RecordCircle size="32" variant="Bold" /></div>
+                            <div className="feature-text">
+                                <h3 className="feature-caption">Simple Screen Recording</h3>
+                                <p className="feature-description">Effortless screen recording for everyone. Record with ease, no tech expertise required.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="feature-inner">
-                        <div className="feature-icon"><RefreshSquare size="32" variant="Bold" /></div>
-                        <div className="feature-text">
-                            <h3 className="feature-caption">Revisit Recordings</h3>
-                            <p className="feature-description">Access and review your past content effortlessly. Your recordings, always at your fingertips.</p>
+                        <div className="feature-inner">
+                            <div className="feature-icon flex"><Send2 size="32" variant="Bold" /></div>
+                            <div className="feature-text">
+                                <h3 className="feature-caption">Easy-to-Share URL</h3>
+                                <p className="feature-description">Share your recordings instantly with a single link. No attachments, no downloads.</p>
+                            </div>
+                        </div>
+                        <div className="feature-inner">
+                            <div className="feature-icon flex"><RefreshSquare size="32" variant="Bold" /></div>
+                            <div className="feature-text">
+                                <h3 className="feature-caption">Revisit Recordings</h3>
+                                <p className="feature-description">Access and review your past content effortlessly. Your recordings, always at your fingertips.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -42,22 +58,22 @@ function Home() {
                 <h2>How it works</h2>
                 <div className="work-steps-grid">
                     <div className="work-step">
-                        <p>1</p>
+                        <p className="numbering">1</p>
                         <h4>Record Screen</h4>
-                        <p>Click the "Start Recording" button in our extension.  choose which part of your screen to capture and who you want to send it to.</p>
-                        <img src="" alt="" />
+                        <p className="text">Click the "Start Recording" button in our extension.  choose which part of your screen to capture and who you want to send it to.</p>
+                        <img src="images/work-vector.svg" alt="vector" />
                     </div>
                     <div className="work-step">
-                        <p>2</p>
+                        <p className="numbering">2</p>
                         <h4>Share Your Recording</h4>
-                        <p>We generate a shareable link for your video. Simply send it to your audience via email or copy the link to send via any platform.</p>
-                        <img src="" alt="" />
+                        <p className="text">We generate a shareable link for your video. Simply send it to your audience via email or copy the link to send via any platform.</p>
+                        <img src="images/work-vector.svg" alt="vector" />
                     </div>
                     <div className="work-step">
-                        <p>3</p>
+                        <p className="numbering">3</p>
                         <h4>Learn Effortlessly</h4>
-                        <p>Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.</p>
-                        <img src="" alt="" />
+                        <p className="text">Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.</p>
+                        <img src="images/work-vector.svg" alt="vector" />
                     </div>
                 </div>
             </section>

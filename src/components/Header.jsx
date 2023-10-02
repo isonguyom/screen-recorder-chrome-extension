@@ -7,7 +7,7 @@ function Header() {
                 <li className="nav-item"><a className="nav-link" href="">Features</a></li>
                 <li className="nav-item"><a className="nav-link" href="">How It Works</a></li>
             </ul>
-            <button className="header-btn btn">Get Started</button>
+            <a href='/register' className="header-btn btn">Get Started</a>
         </header>
     )
 }

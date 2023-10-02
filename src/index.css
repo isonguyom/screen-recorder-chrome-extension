@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import './assets/common.css';
 
 :root {
   --primary-font: 'Work Sans', sans-serif;
   --title-font: 'Sora', sans-serif;
+  --inter: 'Inter', sans-serif;
   --primary-main: #120B48;
   --primary-100: #B6B3C6;
   --primary-200: #928FAB;
@@ -80,6 +82,10 @@ h6 {
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* button {
