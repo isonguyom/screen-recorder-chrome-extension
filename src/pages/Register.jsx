@@ -34,7 +34,7 @@ function Register() {
                     <hr />
                     <p className='demarcator-text'>or</p>
                 </div>
-                <div>
+                <div className='form'>
                     <form className='grid-wrapper' onSubmit={handleSubmit}>
                         <label className='input-group'>
                             <span className='input-label'>Email</span>
@@ -62,6 +62,11 @@ function Register() {
                     </form>
                 </div>
                 <a className='action-link' href=''>Continue as a Guest</a>
+            </div>
+            <div className=''>
+            <a href='' className="brand"><img className="brand-icon" src="icons/icon-main.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
+                <h2>Log in or Sign up</h2>
+                <p>Join millions of others in sharing successful moves on HelpMeOut.</p>
             </div>
         </main>
     )

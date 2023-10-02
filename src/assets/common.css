@@ -12,15 +12,17 @@
     height: 48px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     text-align: center;
     text-decoration: none;
-    width: fit-content;
     color: #141414;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     width: 100%;
+}
+
+.btn-icon {
+    gap: 12px;
 }
 
 .btn-outline {
@@ -163,4 +165,10 @@ font-weight: 500;
     border: transparent;
     background: transparent;
     cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+    .btn {
+        width: fit-content;
+    }
 }
