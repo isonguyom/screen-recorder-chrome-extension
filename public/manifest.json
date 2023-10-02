@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "HelpMeOut",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "HelpMeOut"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting",
+        "tabs",
+        "desktopCapture"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "32": "icons/icon32.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "home.html"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ]
+}

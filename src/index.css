@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+@import './assets/common.css';
+
+:root {
+  --primary-font: 'Work Sans', sans-serif;
+  --title-font: 'Sora', sans-serif;
+  --primary-main: #120B48;
+  --primary-100: #B6B3C6;
+  --primary-200: #928FAB;
+  --primary-400: #413C6D;
+  --primary-600: #100A42;
+  --primary-900: #08051e;
+  /* -------------------------- */
+  --primary-300: #605c84;
+  --primary-500: #120b48;
+  --primary-700: #0d0833;
+  --primary-800: #0a0628;
+  --secondary-50: #e6f3f3;
+  --secondary-100: #b0d8d8;
+  --secondary-200: #8ac6c6;
+  --secondary-300: #54abab;
+  --secondary-400: #339b9b;
+  --secondary-500: #008282;
+  --secondary-600: #007676;
+  --secondary-700: #005c5c;
+  --secondary-800: #004848;
+  --secondary-900: #003737;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  font-weight: 400;
+  color: var(--primary-main);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  color: #141414;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  transition: border-color 0.25s;
+} */
+
+/* button:hover {
+  border-color: #646cff;
+} */
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}

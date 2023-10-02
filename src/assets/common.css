@@ -1,0 +1,166 @@
+.title {
+    font-size: 32px;
+    letter-spacing: 0.32px;
+}
+
+.btn {
+    background: transparent;
+    border: transparent;
+    border-radius: 12px;
+    display: flex;
+    padding: 3px 24px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    color: #141414;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn-outline {
+    border: 1px solid #141414;
+}
+
+.btn-solid {
+    background: var(--primary-main);
+    color: #F9F9FF;
+}
+
+.btn-solid:hover {
+    background: #FF385C;
+}
+
+.btn>* {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grid-wrapper {
+    display: grid;
+    gap: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.input-label {
+    display: block;
+font-size: 14px;
+font-weight: 500;
+}
+
+.input-field {
+    border-radius: 12px;
+    border: 1px solid var(--primary-100);
+    padding: 16px;
+    width: 100%;
+}
+
+.input-field::placeholder {
+    color: #626262;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Toggler */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-100);
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+.toggle-span:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2.4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked+span {
+    background-color: var(--primary-main);
+}
+
+.toggle-checkbox:checked+span:before {
+    transform: translateX(16px);
+}
+
+.mobile {
+    padding: 24px 3%;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile-top {
+    padding: 0 0 24px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-primary-900);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mobile-top.mobile-top-text {
+    padding: 0;
+    align-items: center;
+    color: var(--primary-primary-900);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.mobile-top .mobile-back-btn {
+    width: fit-content;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
