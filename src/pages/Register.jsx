@@ -18,55 +18,57 @@ function Register() {
     }
     return (
         <main className="Register">
-            <div className="mobile">
-                <div className="mobile-top">
-                    <button className="mobile-back-btn"><ArrowLeft2 size="24" color="#141414" /></button>
-                </div>
-                <div className='register-hero'>
+            <a href='/' className="brand desktop"><img className="brand-icon" src="icons/icon-main.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
+            <div className='wrapper'>
+            <div className="mobile-top">
+                <button className="mobile-back-btn"><ArrowLeft2 size="24" color="#141414" /></button>
+            </div>
+            <div className='register-hero'>
+                <div className='mobile'>
                     <h2 className='title'>Create an account</h2>
                     <p className='text'>Join millions of others in sharing successful moves on HelpMeOut.</p>
                 </div>
-                <div className='grid-wrapper'>
-                    <button className='btn btn-outline'><img src='/icons/google-icon.svg' alt='google' />Continue with Google</button>
-                    <button className='btn btn-outline'><img src='/icons/facebook-round.svg' alt='' />Continue with Facebook</button>
+                <div className='desktop'>
+                    <h2 className='title'>Log in or Sign up</h2>
+                    <p className='text'>Join millions of others in sharing successful moves on HelpMeOut.</p>
                 </div>
-                <div className='demarcator-wrapper'>
-                    <hr />
-                    <p className='demarcator-text'>or</p>
-                </div>
-                <div className='form'>
-                    <form className='grid-wrapper' onSubmit={handleSubmit}>
-                        <label className='input-group'>
-                            <span className='input-label'>Email</span>
-                            <input
-                                className='input-field'
-                                type="email"
-                                name="email"
-                                placeholder='Enter your email address'
-                                value={userDetails.email || ""}
-                                onChange={handleChange}
-                            />
-                        </label>
-                        <label className='input-group'>
-                            <span className='input-label'>Password</span>
-                            <input
-                                className='input-field'
-                                type="password"
-                                name="password"
-                                placeholder='Enter your Password'
-                                value={userDetails.password || ""}
-                                onChange={handleChange}
-                            />
-                        </label>
-                        <button className='btn btn-solid' type='submit'>Create Account</button>
-                    </form>
-                </div>
-                <a className='action-link' href=''>Continue as a Guest</a>
             </div>
-            <div className=''>
-            <a href='' className="brand"><img className="brand-icon" src="icons/icon-main.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
-                <h2>Log in or Sign up</h2>
-                <p>Join millions of others in sharing successful moves on HelpMeOut.</p>
+            <div className='grid-wrapper'>
+                <button className='btn btn-outline btn-icon full-width'><img src='/icons/google-icon.svg' alt='google' />Continue with Google</button>
+                <button className='btn btn-outline btn-icon full-width'><img src='/icons/facebook-round.svg' alt='' />Continue with Facebook</button>
+            </div>
+            <div className='demarcator-wrapper'>
+                <hr />
+                <p className='demarcator-text'>or</p>
+            </div>
+            <div className='form'>
+                <form className='grid-wrapper' onSubmit={handleSubmit}>
+                    <label className='input-group'>
+                        <span className='input-label'>Email</span>
+                        <input
+                            className='input-field'
+                            type="email"
+                            name="email"
+                            placeholder='Enter your email address'
+                            value={userDetails.email || ""}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className='input-group'>
+                        <span className='input-label'>Password</span>
+                        <input
+                            className='input-field'
+                            type="password"
+                            name="password"
+                            placeholder='Enter your Password'
+                            value={userDetails.password || ""}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <button className='btn btn-solid full-width' type='submit'>Create Account</button>
+                </form>
+            </div>
+            <a className='action-link' href='/'>Continue as a Guest</a>
             </div>
         </main>
     )

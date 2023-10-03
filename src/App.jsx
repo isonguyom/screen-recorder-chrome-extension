@@ -6,6 +6,9 @@ import RecordingWidget from './components/RecordingWidget.jsx'
 import Register from "./pages/Register.jsx";
 import ShareVideo from "./pages/ShareVideo.jsx";
 import UserPage from "./pages/UserPage.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import FilePage from "./pages/FilePage.com.jsx";
+
 
 
 import './App.css'
@@ -22,6 +25,8 @@ function App() {
           <Route path="user" element={<UserPage />} />
           </Route>
           <Route path="register" element={<Register />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="file/:id" element={<FilePage />} />
           <Route path="permission" element={<Permission />} />
           <Route path="recording" element={<RecordingWidget />} />
         </Routes>
