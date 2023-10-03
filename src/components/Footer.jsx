@@ -1,7 +1,9 @@
+import iconWhite from "/icons/icon-white.svg"
+
 function Footer() {
     return (
         <footer className="Footer">
-            <a href='' className="brand"><img className="brand-icon" src="icons/icon-white.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
+            <a href='' className="brand"><img className="brand-icon" src={iconWhite} /><h2 className="brand-name">HelpMeOut</h2></a>
             <div className="footer-links-grid">
                 <div className="footer-links-wrapper">
                     <p className="footer-links-title">Menu</p>

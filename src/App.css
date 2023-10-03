@@ -1006,7 +1006,7 @@ margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 5%;
+    padding: 20px 5%;
   }
 
   .hero-text {
@@ -1017,7 +1017,7 @@ margin-bottom: 8px;
     display: flex;
     gap: 24px;
     padding: 40px;
-    background-image: url('images/hero-bg1.png'), url('images/hero-bg2.png');
+    background-image: url('/images/hero-bg1.png'), url('/images/hero-bg2.png');
     background-position: right top, left bottom;
     background-repeat: no-repeat;
   }

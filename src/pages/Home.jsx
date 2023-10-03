@@ -1,5 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ArrowRight, RecordCircle, Send2, RefreshSquare } from "iconsax-react"
+import hero1 from '/images/home-hero1.png'
+import hero2 from '/images/home-hero2.png'
+import hero3 from '/images/home-hero3.png'
+import featuresImage from '/images/feature-img.png'
+import vector from '/images/work-vector.svg'
 
 function Home() {
     return (
@@ -12,11 +17,11 @@ function Home() {
                 </div>
                 <div className="hero-image">
                     <div className='double-image'>
-                        <img src='images/home-hero1.png' alt='hero 1' />
-                        <img src='images/home-hero2.png' alt='hero 2' />
+                        <img src={hero1} alt='hero 1' />
+                        <img src={hero2} alt='hero 2' />
                     </div>
                     <div>
-                        <img src='images/home-hero3.png' alt='hero 3' />
+                        <img src={hero3} alt='hero 3' />
                     </div>
                 </div>
             </section>
@@ -27,7 +32,7 @@ function Home() {
                 </div>
                 <div className="features-wrapper grid-wrapper">
                     <div className="features-image">
-                        <img src="images/feature-img.png" alt="feature" />
+                        <img src={featuresImage} alt="feature" />
                     </div>
                     <div className="features-grid grid-wrapper">
                         <div className="feature-inner">
@@ -61,19 +66,19 @@ function Home() {
                         <p className="numbering">1</p>
                         <h4>Record Screen</h4>
                         <p className="text">Click the "Start Recording" button in our extension.  choose which part of your screen to capture and who you want to send it to.</p>
-                        <img src="images/work-vector.svg" alt="vector" />
+                        <img src={vector} alt="vector" />
                     </div>
                     <div className="work-step">
                         <p className="numbering">2</p>
                         <h4>Share Your Recording</h4>
                         <p className="text">We generate a shareable link for your video. Simply send it to your audience via email or copy the link to send via any platform.</p>
-                        <img src="images/work-vector.svg" alt="vector" />
+                        <img src={vector} alt="vector" />
                     </div>
                     <div className="work-step">
                         <p className="numbering">3</p>
                         <h4>Learn Effortlessly</h4>
                         <p className="text">Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.</p>
-                        <img src="images/work-vector.svg" alt="vector" />
+                        <img src={vector} alt="vector" />
                     </div>
                 </div>
             </section>

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import { ArrowLeft2 } from 'iconsax-react'
+import googleIcon from '/icons/google-icon.svg'
+import facebookIcon from '/icons/facebook-round.svg'
 
 
 function Register() {
@@ -34,8 +36,8 @@ function Register() {
                 </div>
             </div>
             <div className='grid-wrapper'>
-                <button className='btn btn-outline btn-icon full-width'><img src='/icons/google-icon.svg' alt='google' />Continue with Google</button>
-                <button className='btn btn-outline btn-icon full-width'><img src='/icons/facebook-round.svg' alt='' />Continue with Facebook</button>
+                <button className='btn btn-outline btn-icon full-width'><img src={googleIcon} alt='google' />Continue with Google</button>
+                <button className='btn btn-outline btn-icon full-width'><img src={facebookIcon} alt='' />Continue with Facebook</button>
             </div>
             <div className='demarcator-wrapper'>
                 <hr />

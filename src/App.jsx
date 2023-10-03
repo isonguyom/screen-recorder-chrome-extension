@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="screen-recorder-chrome-extension">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
