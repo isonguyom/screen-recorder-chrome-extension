@@ -80,6 +80,7 @@
 .mobile .btn.start-rec-btn {
   width: fit-content;
   position: fixed;
+  z-index: 100;
   right: 7%;
   bottom: 80px;
 }
@@ -427,6 +428,7 @@
 .video-name-wrapper.flex {
   align-items: flex-end;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .video-name-wrapper .input-label {
@@ -434,6 +436,7 @@
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 500;
+  width: fit-content;
 }
 
 .video-name-wrapper .input-field {
@@ -442,8 +445,10 @@
   font-size: 18px;
   font-weight: 600;
   width: fit-content;
+  padding: 4px;
   padding: 0;
   border: transparent;
+  border-radius: 0;
   background: transparent;
   cursor: pointer;
 }
@@ -745,6 +750,7 @@ margin-bottom: 12px;
   background: rgba(251, 251, 251, 0.50);
   padding: 16px;
   width: 100%;
+border: 1px solid rgba(182, 179, 198, 0.60);
 }
 
 .video-wrapper {
@@ -757,6 +763,7 @@ align-self: stretch;
 border-radius: var(--Inner-Radius, 12px);
 border: 1px solid var(--primary-primary-50);
 background: lightgray ;
+position: relative;
 }
 
 video {
@@ -776,12 +783,28 @@ font-size: 16px;
 text-transform: uppercase;
 }
 
-.file-des h4 {
+.file-des .video-title {
+  display: block;
   color: #141414;
 font-size: 20px;
 font-weight: 500;
 margin-bottom: 8px;
+text-transform: capitalize;
 }
+
+.video-timer {
+  display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+background: #E7E7ED;
+position: absolute;
+bottom: 8px;
+right: 8px;
+}
+
 
 .file-icons {
   display: flex;
@@ -1160,5 +1183,26 @@ display: none;
     color: #141414;
 font-size: 45px;
 margin-bottom: 40px;
+  }
+
+  .File .brand {
+    display: flex !important;
+  }
+
+  .File .filepage-inputs {
+    flex-direction: row !important;
+  }
+
+  .File .desktop .filepage-inputs label.input-group {
+   width: 45% !important;
+  }
+
+  .File .transcript-wrapper {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .File .video-wrapper {
+    height: 408px;
   }
 }

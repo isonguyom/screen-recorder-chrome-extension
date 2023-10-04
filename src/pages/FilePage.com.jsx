@@ -6,7 +6,7 @@ import { useState } from "react"
 function FilePage() {
     const [recipientEmail, setRecipientEmail] = useState('')
     const [shareEmail, setShareEmail] = useState('Johnmark@gmail.com')
-    const [videoTitle, setVideoTitle] = useState("How To Create A Facebook Ad Listing")
+    const [videoTitle] = useState("How To Create A Facebook Ad Listing")
     const handleShare = () => {
 
     }
@@ -31,13 +31,11 @@ function FilePage() {
 
                 <div className='video-name-wrapper flex'>
                     <label className='input-group'>
-                        <input
+                        <span
                             className='input-field'
-                            type="text"
-                            name="videoTitle"
-                            value={videoTitle}
-                            onChange={(e) => setVideoTitle(e.target.value)}
-                        />
+                        >
+                        {videoTitle}
+                        </span>
                     </label>
                     <button className='video-name-edit-btn'><Edit size="24"
                         color="#120B48" /></button>

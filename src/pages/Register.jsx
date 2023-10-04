@@ -14,9 +14,9 @@ function Register() {
         setUserDetails(values => ({ ...values, [name]: value }))
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        alert(userDetails);
+    const handleSubmit = () => {
+        // e.preventDefault();
+        // alert(userDetails);
     }
     return (
         <main className="Register">
@@ -44,7 +44,7 @@ function Register() {
                 <p className='demarcator-text'>or</p>
             </div>
             <div className='form'>
-                <form className='grid-wrapper' onSubmit={handleSubmit}>
+                <form className='grid-wrapper' onSubmit={handleSubmit} action='/dashboard'>
                     <label className='input-group'>
                         <span className='input-label'>Email</span>
                         <input

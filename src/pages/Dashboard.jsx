@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SearchNormal1, Link1, ProfileCircle, ArrowDown2, Setting2, VideoHorizontal, More } from "iconsax-react";
 import { LuMoreVertical } from "react-icons/lu";
 import StartRecButton from "../components/MobileStartButton";
+import { Link } from "react-router-dom"
 
 function Dashboard() {
     const [searchInput, setSearchInput] = useState('');
@@ -59,11 +60,12 @@ function Dashboard() {
                     <div className="recent-file">
                         <div className="video-wrapper">
                             <video></video>
+                            <span className="video-timer">00:34</span>
                         </div>
                         <div className="recent-file-label">
                             <div className="file-des">
-                                <h3>How to create Facebook Ad listing</h3>
-                                SEPTEMBER 23, 2023
+                                <Link className="video-title" tag="h3" to='/file/1'>How to create Facebook Ad listing</Link>
+                                <span className="faint-text">SEPTEMBER 23, 2023</span>
                             </div>
                             <div className="file-icons">
                                 <Link1 size="24" />
@@ -74,11 +76,12 @@ function Dashboard() {
                     <div className="recent-file">
                         <div className="video-wrapper">
                             <video></video>
+                            <span className="video-timer">00:34</span>
                         </div>
                         <div className="recent-file-label">
                             <div className="file-des">
-                                <h3>How to create Facebook Ad listing</h3>
-                                SEPTEMBER 23, 2023
+                                <Link className="video-title" tag="h3" to='/file/2'>How to create Facebook Ad listing</Link>
+                                <span className="faint-text"> SEPTEMBER 23, 2023</span>
                             </div>
                             <div className="file-icons">
                                 <Link1 size="24" />
@@ -89,11 +92,12 @@ function Dashboard() {
                     <div className="recent-file">
                         <div className="video-wrapper">
                             <video></video>
+                            <span className="video-timer">00:34</span>
                         </div>
                         <div className="recent-file-label">
                             <div className="file-des">
-                                <h3>How to create Facebook Ad listing</h3>
-                                SEPTEMBER 23, 2023
+                                <Link className="video-title" tag="h3" to='/file/1'>How to create Facebook Ad listing</Link>
+                                <span className="faint-text"> SEPTEMBER 23, 2023 </span>
                             </div>
                             <div className="file-icons">
                                 <Link1 size="24" />
@@ -104,11 +108,12 @@ function Dashboard() {
                     <div className="recent-file">
                         <div className="video-wrapper">
                             <video></video>
+                            <span className="video-timer">00:34</span>
                         </div>
                         <div className="recent-file-label">
                             <div className="file-des">
-                                <h3>How to create Facebook Ad listing</h3>
-                                SEPTEMBER 23, 2023
+                                <Link className="video-title" tag="h3" to='/file/1'>How to create Facebook Ad listing</Link>
+                                <span className="faint-text">  SEPTEMBER 23, 2023</span>
                             </div>
                             <div className="file-icons">
                                 <Link1 size="24" />
