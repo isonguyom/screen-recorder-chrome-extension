@@ -80,7 +80,7 @@ function Dashboard() {
                         </div>
                         <div className="recent-file-label">
                             <div className="file-des">
-                                <Link className="video-title" tag="h3" to='/file/2'>How to create Facebook Ad listing</Link>
+                                <Link className="video-title" tag="h3" to='file/2'>How to create Facebook Ad listing</Link>
                                 <span className="faint-text"> SEPTEMBER 23, 2023</span>
                             </div>
                             <div className="file-icons">

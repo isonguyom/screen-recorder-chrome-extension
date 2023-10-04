@@ -44,7 +44,7 @@ function Register() {
                 <p className='demarcator-text'>or</p>
             </div>
             <div className='form'>
-                <form className='grid-wrapper' onSubmit={handleSubmit} action='/dashboard'>
+                <form className='grid-wrapper' onSubmit={handleSubmit} action='dashboard'>
                     <label className='input-group'>
                         <span className='input-label'>Email</span>
                         <input

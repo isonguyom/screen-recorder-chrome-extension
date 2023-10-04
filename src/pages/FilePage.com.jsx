@@ -14,7 +14,7 @@ function FilePage() {
         <main className="File">
             <div className="top-header2">
                 <a href='/' className="brand desktop">
-                    <img className="brand-icon" src="/icons/icon-main.svg" />
+                    <img className="brand-icon" src="icons/icon-main.svg" />
                     <h2 className="brand-name">HelpMeOut</h2></a>
                 <div className="user-widget">
                     <ProfileCircle size="40" variant="Bulk" />
@@ -66,9 +66,9 @@ function FilePage() {
                 <div className='copy-options flex'>
                     <button className='btn copy-btn btn-outline'><LuCopy size='20' color='#120B48' />Copy video link</button>
                     <div className='social-options flex'>
-                        <a href=''><img src='/icons/whatsapp.svg' alt='whatsapp' /></a>
-                        <a href=''><img src='/icons/facebook.svg' alt='facebook' /></a>
-                        <a href=''><img src='/icons/telegram.svg' alt='telegram' /></a>
+                        <a href=''><img src='icons/whatsapp.svg' alt='whatsapp' /></a>
+                        <a href=''><img src='icons/facebook.svg' alt='facebook' /></a>
+                        <a href=''><img src='icons/telegram.svg' alt='telegram' /></a>
                     </div>
                 </div>
             </div>
