@@ -125,6 +125,10 @@
     height: 20px;
 }
 
+.Popup .btn.btn-solid {
+    width: 100%;
+}
+
 .toggle-checkbox {
     opacity: 0;
     width: 0;

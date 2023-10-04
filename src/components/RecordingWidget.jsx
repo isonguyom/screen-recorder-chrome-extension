@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { RiPauseFill } from 'react-icons/ri'
 import { BsStop as BsStop } from 'react-icons/bs'
 import { HiOutlineVideoCamera } from 'react-icons/hi';
@@ -6,7 +7,7 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import { GoDotFill } from 'react-icons/go';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 
-function Widget() {
+function Widget({onStop}) {
     return (
         <div className="Widget">
             <div className='widget-timer-wrapper'>
@@ -15,7 +16,7 @@ function Widget() {
             </div>
             <div className="widget-btn-group">
                 <button className="widget-btn"><span className="widget-btn-icon"><RiPauseFill /></span><span className="widget-btn-text">Pause</span></button>
-                <button className="widget-btn"><span className="widget-btn-icon"><BsStop /></span><span className="widget-btn-text">Stop</span></button>
+                <button className="widget-btn" onClick={() => onStop()}><span className="widget-btn-icon"><BsStop /></span><span className="widget-btn-text">Stop</span></button>
                 <button className="widget-btn"><span className="widget-btn-icon"><HiOutlineVideoCamera /></span><span className='mini-icon'><MdKeyboardArrowUp /></span><span className="widget-btn-text">Camera</span></button>
                 <button className="widget-btn"><span className="widget-btn-icon"><AiOutlineAudio /></span><span className='mini-icon'><MdKeyboardArrowUp /></span><span className="widget-btn-text">Mic</span></button>
             </div>
