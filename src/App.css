@@ -560,6 +560,10 @@
   color: var(--primary-main);
 }
 
+.social-share .btn img {
+  width: 24px;
+}
+
 .transcript-title {
   color: var(--primary-900);
   font-weight: 600;
@@ -1115,6 +1119,9 @@ right: 8px;
     border-radius: 8px;
     border: transparent;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .desktop .filepage-inputs .input-group .btn2.btn-outline {
@@ -1191,10 +1198,7 @@ margin-bottom: 40px;
 
   .File .filepage-inputs {
     flex-direction: row !important;
-  }
-
-  .File .desktop .filepage-inputs label.input-group {
-   width: 45% !important;
+    gap: 64px;
   }
 
   .File .transcript-wrapper {

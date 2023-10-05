@@ -20,7 +20,7 @@ function Register() {
     }
     return (
         <main className="Register">
-            <a href='' className="brand desktop"><img className="brand-icon" src="icons/icon-main.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
+            <a href='/' className="brand desktop"><img className="brand-icon" src="icons/icon-main.svg" /><h2 className="brand-name">HelpMeOut</h2></a>
             <div className='wrapper'>
             <div className="mobile-top">
                 <button className="mobile-back-btn"><ArrowLeft2 size="24" color="#141414" /></button>

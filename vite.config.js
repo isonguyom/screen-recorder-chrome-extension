@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/screen-recorder-chrome-extension",
+  base: "/screen-recorder-chrome-extension/",
   plugins: [react()],
 })

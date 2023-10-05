@@ -2,6 +2,11 @@
 import { ProfileCircle, ArrowDown2, Edit, Setting2 } from "iconsax-react"
 import { LuCopy } from 'react-icons/lu'
 import { useState } from "react"
+import iconMain from '/icons/icon-main.svg'
+import whatsapp from '/icons/whatsapp.svg'
+import facebook from '/icons/facebook.svg'
+import telegram from '/icons/telegram.svg'
+
 
 function FilePage() {
     const [recipientEmail, setRecipientEmail] = useState('')
@@ -14,7 +19,7 @@ function FilePage() {
         <main className="File">
             <div className="top-header2">
                 <a href='/' className="brand desktop">
-                    <img className="brand-icon" src="icons/icon-main.svg" />
+                    <img className="brand-icon" src={iconMain} />
                     <h2 className="brand-name">HelpMeOut</h2></a>
                 <div className="user-widget">
                     <ProfileCircle size="40" variant="Bulk" />
@@ -66,9 +71,9 @@ function FilePage() {
                 <div className='copy-options flex'>
                     <button className='btn copy-btn btn-outline'><LuCopy size='20' color='#120B48' />Copy video link</button>
                     <div className='social-options flex'>
-                        <a href=''><img src='icons/whatsapp.svg' alt='whatsapp' /></a>
-                        <a href=''><img src='icons/facebook.svg' alt='facebook' /></a>
-                        <a href=''><img src='icons/telegram.svg' alt='telegram' /></a>
+                        <a href=''><img src={whatsapp} alt='whatsapp' /></a>
+                        <a href=''><img src={facebook} alt='facebook' /></a>
+                        <a href=''><img src={telegram} alt='telegram' /></a>
                     </div>
                 </div>
             </div>
@@ -100,9 +105,9 @@ function FilePage() {
                 <div className="social-wrapper">
                     <h4>Share your video </h4>
                     <div className="social-share">
-                        <a href="https//:" className='btn btn-outline btn-icon'><img src='/icons/facebook24.svg' alt='facebook' />Facebook</a>
-                        <a href="https//:" className='btn btn-outline btn-icon'><img src='/icons/whatsapp24.svg' alt='whatsapp' />Whatsapp</a>
-                        <a href="https//:" className='btn btn-outline btn-icon'><img src='/icons/telegram24.svg' alt='telegram' />Telegram</a>
+                        <a href="https//:" className='btn btn-outline btn-icon'><img src={facebook} alt='facebook' />Facebook</a>
+                        <a href="https//:" className='btn btn-outline btn-icon'><img src={whatsapp} alt='whatsapp' />Whatsapp</a>
+                        <a href="https//:" className='btn btn-outline btn-icon'><img src={telegram} alt='telegram' />Telegram</a>
                     </div>
                 </div>
             </div>
