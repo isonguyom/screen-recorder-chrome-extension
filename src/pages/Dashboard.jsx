@@ -28,7 +28,7 @@ function Dashboard() {
             </div>
             <div className="desktop">
                 <div className="top-header2">
-                    <a href='/' className="brand desktop">
+                    <a href='#' className="brand desktop">
                         <img className="brand-icon" src="icons/icon-main.svg" />
                         <h2 className="brand-name">HelpMeOut</h2></a>
                     <div className="user-widget">
